@@ -55,3 +55,14 @@ if not df.empty:
 )
 if df.empty:
     st.warning("No news data found in database.")
+else:
+    display_df = df[
+        [
+            "news_date",
+            "source_name",
+            "title",
+            "sentiment_score",
+            "sentiment_label",
+            "created_at"
+        ]
+    ]
