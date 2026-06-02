@@ -79,3 +79,8 @@ styled_df = display_df.style.map(
     color_sentiment,
     subset=["sentiment_score"]
 )
+st.dataframe(
+        styled_df,
+        use_container_width=True,
+        height=600
+    )
