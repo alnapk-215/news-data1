@@ -12,3 +12,10 @@ conn = psycopg2.connect(
     password="alnarajeevan",
     port="5432"
 )
+
+url = "https://newsapi.org/v2/top-headlines"
+params = {
+    "country": "us",
+    "category": "technology",
+    "apiKey": API_KEY
+}
