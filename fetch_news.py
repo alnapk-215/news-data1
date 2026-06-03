@@ -52,3 +52,6 @@ conn.commit()
 
 
 print(f"{len(articles)} news articles inserted successfully!")
+
+cur.close()
+conn.close()
