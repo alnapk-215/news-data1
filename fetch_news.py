@@ -47,3 +47,5 @@ for article in articles:
         (news_date, source_name, title, sentiment_score, sentiment_label)
         VALUES (%s, %s, %s, %s, %s)
     """, (news_date, source_name, title, sentiment_score, sentiment_label))
+
+conn.commit()
