@@ -19,3 +19,9 @@ params = {
     "category": "technology",
     "apiKey": API_KEY
 }
+
+print(response.json())
+
+articles = response.json().get("articles", [])
+
+cur = conn.cursor()
