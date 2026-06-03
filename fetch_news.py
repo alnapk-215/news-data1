@@ -41,3 +41,9 @@ for article in articles:
         sentiment_label = "Negative"
     else:
         sentiment_label = "Neutral"
+
+    cur.execute("""
+        INSERT INTO news_data
+        (news_date, source_name, title, sentiment_score, sentiment_label)
+        VALUES (%s, %s, %s, %s, %s)
+    """, (news_date, source_name, title, sentiment_score, sentiment_label))
