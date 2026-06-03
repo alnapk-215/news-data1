@@ -31,4 +31,4 @@ for article in articles:
     source_name = article.get("source", {}).get("name")
     published_at = article.get("publishedAt")
 
-    
+    news_date = datetime.strptime(published_at, "%Y-%m-%dT%H:%M:%SZ").date()
